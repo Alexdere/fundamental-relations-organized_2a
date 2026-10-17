@@ -51,3 +51,7 @@ $$
 - **Integer diagonal:** iff (n^2-2m^2=-1), and then (d=nm).
 - **Twin-prime-centered case:** (n-1,n+1) both prime implies (n) even and the diagonal is nonintegral in this construction.
 - **Prime-prefix experiment:** (S_k=\sum_{i=1}^k p_i^2) sometimes hits triangular numbers; (S_7=666=T_{36}).
+
+## Scope clarification — 17 October 2026
+
+The v0.1 and v0.2 above belong to the **square-sum thread only**. The broader framework's intended v0.1 is [A Constraint-First Theory of Objects, Locality, and Persistence](../Constraint_Theory_MASTER/versions/v0.1_constraint_first_theory_2026-10-16.md), dated 16 October 2026. See its [folder guide](../Constraint_Theory_MASTER/README.md). These square-sum notes remain preserved as a separate exploration.

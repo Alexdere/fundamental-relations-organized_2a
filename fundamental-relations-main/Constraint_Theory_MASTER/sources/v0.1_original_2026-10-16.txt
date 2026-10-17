@@ -1,0 +1,115 @@
+A Constraint-First Theory of Objects, Locality, and Persistence
+Working formalization 0.1  |  16 October 2026
+Research status: exploratory framework; internally testable definitions, not yet a physical theory.
+Aim. Begin with a space of possibilities, investigate whether restrictions can distinguish objects, and ask what extra conditions produce coherence, locality, persistence, and physical interactions. Every new mathematical symbol is defined at first use; a consolidated glossary appears at the end.
+Executive orientation
+Core proposal: an object need not be an extra ingredient added to a medium. It may be an identifiable pattern selected by jointly compatible restrictions on possible configurations. This is an ontological hypothesis, not a conclusion forced by set theory. We will be careful not to confuse a mathematical description of an object with a proof of what an object fundamentally is.
+Our current strongest result is conditional and modest: given a specified possibility space and constraints, their intersection produces an allowed set. Whether that allowed set constitutes a coherent, spatially local, dynamically persistent physical object requires separate axioms and dynamics.
+1. Levels of claims: what is being asserted?
+
+
+This separation is essential: naming a phenomenon does not explain it; drawing an analogy to a funnel does not prove convergence; and translating a known law into the language of restrictions does not by itself generate a new physical theory.
+2. Primitive vocabulary: possibilities and restrictions
+Definition 2.1 — Possibility space. Let Ω (capital omega) be a nonempty set of candidate configurations or states. A “state” is a complete mathematical description at whichever resolution the model uses. We do not yet assume that Ω is physical space, spacetime, a field, a quantum Hilbert space, or the universe.
+Definition 2.2 — Restriction. A restriction C is a subset of Ω consisting of the states it permits. Saying x ∈ C means state x is permitted by restriction C. The symbol ∈ means “is an element of”; ⊆ means “is a subset of.”
+C ⊆ Ω
+Equivalently, a rule f(x) = 0 specifies the subset C = {x ∈ Ω : f(x) = 0}. The braces { … } mean “the set of”; the colon : means “such that”; f is a chosen function, not necessarily a force.
+Definition 2.3 — Combination. Given restrictions C₁, C₂, …, Cₙ, their simultaneous allowed set is their intersection. The symbol ∩ means the states common to all sets; n denotes the number of restrictions.
+A = C₁ ∩ C₂ ∩ ··· ∩ Cₙ
+A is an allowed set, not automatically an object. Empty set ∅: no candidate satisfies everything. One-element set {x*}: one mathematically distinguishable candidate. Larger A: multiple candidates remain. Here x* names a particular state; the asterisk is just a label.
+
+
+Counterexample. Let Ω = {red, blue}. If C₁ = {red} and C₂ = {blue}, then C₁ ∩ C₂ = ∅. Restrictions do not necessarily create an object. If C₁ = Ω, it adds no selection at all.
+3. Identity: distinction is relative to an observer or criterion
+The slogan “restriction defines identity” requires a criterion for when two allowed states count as the same object. Otherwise tiny differences in unobserved variables can generate spurious multiplicity.
+Definition 3.1 — Equivalence. Write x ~ y when x and y count as the same for the chosen identity criterion. The sign ~ means “equivalent under that criterion.” To be a mathematical equivalence relation, ~ must be reflexive, symmetric, and transitive.
+Definition 3.2 — Object-class. Instead of requiring a single microscopic state, let an object identity be an equivalence class [x] containing all states regarded as the same object. Square brackets [x] denote that class.
+This permits an object to change internally without losing identity. Example: a whirlpool can exchange constituent water molecules yet retain a recognizable structure. The choice of what remains invariant is part of the theory and must not be smuggled into it.
+Provisional identity criterion: a subset A selects an identifiable object-relative-to-~ when every state in A lies in one equivalence class and the class has a discriminable contrast with other classes. This is a definition; it does not prove that the selected class has physical existence.
+4. Coherence is stricter than compatibility
+Compatibility concerns satisfying constraints at a given instant. Coherence concerns whether the internal relations jointly make sense, including under evolution. If rules are contradictory, A is empty; if they are compatible but their candidate instantly disperses, the state may exist briefly without persistence.
+We distinguish: (i) logical compatibility, (ii) structural coherence, (iii) dynamical invariance, and (iv) stability. A full theory must specify observable tests for each; “coherent” cannot remain merely a compliment for a nice-looking configuration.
+5. Add time carefully: dynamics, invariance, and recurrence
+A temporal model adds an evolution map Φₜ: Ω → Ω. Read Φₜ(x) as “the state reached after elapsed time t, starting from x.” The arrow → means “maps to.” The subscript t specifies elapsed time; Φ (capital phi) names the evolution rule. For autonomous reversible dynamics, Φ₀(x) = x and Φₛ(Φₜ(x)) = Φₛ₊ₜ(x). Here s and t are durations, and 0 means zero elapsed time.
+Definition 5.1 — Invariant allowed set. A set A is forward invariant when evolving any state initially in A keeps the state in A for all future t ≥ 0. The symbol ≥ means “greater than or equal to.”
+x ∈ A  ⇒  Φₜ(x) ∈ A  for every t ≥ 0
+The double-line arrow ⇒ means “implies.” This is the first mathematically clean candidate for persistence of a restricted class of states; it does not require oscillation.
+Definition 5.2 — Fixed point. A state x* is a fixed point if it is unchanged as time advances: Φₜ(x*) = x* for all t. A fixed point is persistent but need not oscillate.
+Definition 5.3 — Periodic orbit. A state recurs after a positive period T when Φ_T(x) = x and T > 0. The period T measures one full cycle. Repetition of an equivalence class rather than an identical state is expressed [Φ_T(x)] = [x].
+Definition 5.4 — Coupled recurrence. A subsystem may appear nonperiodic on its own while its temporal behavior depends on a periodically driven larger system. Dependency on some oscillation must be defined dynamically; it cannot be concluded merely because time passes.
+Crucial counterexample to the strong oscillation conjecture. The differential equation dx/dt = −x has solutions x(t) = x(0)e^(−t): the state approaches zero without oscillation, without being driven by an oscillator. Here d/dt means rate of change with time, − is subtraction/negative sign, and e is the exponential base. Thus “everything persisting in time must oscillate or connect to something oscillating” is false under standard broad meanings of persistence and oscillation. A narrower claim about particular self-confined wave objects remains open.
+6. Stability is not identical to recurrence
+To talk about disturbances we need a notion of distance d(x,y) ≥ 0 between states. This is a metric; it tells us what “nearby” means. A fixed point x* is Lyapunov stable if sufficiently close starting states remain close for all subsequent times. It is asymptotically stable if nearby states also approach x* as time increases.
+A periodic orbit can be unstable; a nonoscillating equilibrium can be stable. Repeated return is therefore neither necessary nor sufficient for ordinary stability.
+For practical modeling, define a candidate coherent object as an invariant family A with an explicitly chosen identity relation ~, plus a robustness criterion against a specified class of perturbations. This is a modeling convention pending a physical ontology.
+7. Local and global must be relative to a coupling structure
+Space alone is insufficient. We must say what counts as interaction. Partition a system conceptually into subsystem S and environment E. The letters S and E mean “system” and “environment.” Let κ(S,E) ≥ 0 quantify an operational coupling, for example the maximum information or energy exchanged under a specified experimental protocol and interval. The Greek letter κ (kappa) is a coupling measure; its numerical meaning cannot be fixed without a model.
+Perfect isolation in that protocol means κ(S,E) = 0. It then follows only that the chosen protocol detects no coupling. Claims such as “completely invisible to all of the universe” require zero coupling for every physically available interaction and probe, including gravity; no finite experiment can certify that universal negative.
+A perfectly globally undifferentiated system is a separate limiting ideal: there is no meaningful inside/outside partition. That is not simply κ → ∞ (infinite coupling). The symbol ∞ means unbounded or infinite; stronger coupling can coexist with sharp boundaries.
+Degree of locality could eventually be defined via spatial decay of response, information propagation, support size, or leakage rate. These definitions are inequivalent and must be tested separately.
+8. Loop, mirror, disconnection, interference: distinct mechanisms
+
+
+We should not equate mirror with loop or destructive interference with reflection. They can realize comparable effective return maps in specially constructed models, but have distinct physical prerequisites.
+9. Two counterpropagating waves: a controlled example
+Consider the one-dimensional coordinate x (position) and time t, with amplitude a, wave number k and angular frequency ω (omega). Let u₊ and u₋ be equal-amplitude waves moving in opposite directions. In this example cos is the cosine function.
+u₊(x,t) = a cos(kx − ωt)
+u₋(x,t) = a cos(kx + ωt)
+u(x,t) = u₊ + u₋ = 2a cos(kx) cos(ωt)
+The symbol + denotes addition; subscript + labels the right-moving wave, subscript − the left-moving wave. The last equality follows from the cosine addition identity. The result is a standing-wave pattern: fixed spatial nodes with time-varying amplitude. It is NOT automatically isolated, compact in space, or independent of the medium.
+On an infinite domain, cos(kx) persists throughout space; it does not select a finite local object. To obtain localization, we need a localized envelope, boundary confinement, an inhomogeneous medium, nonlinear self-trapping, or another explicit physical mechanism. Even an exponentially decaying envelope is not strictly zero outside a region.
+Proposed research direction: define a nonlinear evolution law for a field u, find a nonzero localized solution, and prove that the solution’s shape persists (or recurs up to an identity equivalence). Here “field” means a quantity assigned to points in space and time. This is a meaningful mathematical program, not yet an achieved result.
+10. The funnel: intersecting conditions is not the same as geometric convergence
+The funnel is an excellent heuristic, but ordinary set intersection does not automatically produce a narrowing geometric funnel or a singularity. To measure narrowing, define a quantity W(A) describing the size, volume, uncertainty, or spread of allowed states. W must be chosen; different measures produce different conclusions.
+For nested restrictions Aₙ₊₁ ⊆ Aₙ, a monotone size measure gives W(Aₙ₊₁) ≤ W(Aₙ). The symbol ≤ means “less than or equal to.” Nested sets need not shrink to one point: their intersection can remain large or become empty.
+A “singularity” normally has a stricter mathematical meaning, such as failure of regularity or divergence of a quantity. We therefore use “convergence point,” “selected solution,” or “coherent class” until an actual singularity has been demonstrated. An extended object may correspond to an entire invariant region rather than a point.
+11. Can forces be understood negatively?
+We can formalize one limited version: motion subject to constraints. Let q denote a configuration coordinate, L(q,q̇,t) a Lagrangian describing dynamics, and g(q,t) = 0 a constraint. The dot in q̇ means derivative with respect to time. λ (lambda) is a multiplier that supplies the force needed to enforce the constraint. ∇ (nabla) means a gradient, the vector of partial derivatives with respect to the coordinates.
+d/dt (∂L/∂q̇) − ∂L/∂q = λ ∇g
+The symbol ∂ means partial derivative. The equation is a schematic holonomic-constraint form and assumes an appropriate mechanical model and coordinate convention. It shows that constraint forces can be mathematically represented, not that gravity, electromagnetism, and the nuclear interactions are fundamentally absences.
+An important nontriviality test: if the constraints merely encode an already-known force, we have relabeled rather than explained it. To earn explanatory value, a constraint-first model should derive coupling strengths, conservation laws, field behavior, and new outcomes from a smaller independent set of principles.
+Force-as-excluded-trajectories and force-as-missing-opposing-influence are distinct hypotheses. They should not be silently combined; each requires an operational mapping to measurements.
+12. Candidate axioms: minimum viable formal theory
+A0 — Substrate agnosticism. There is an explicit possibility space Ω. Its physical meaning remains to be specified.
+A1 — Restriction representation. Primitive restrictions select allowed subsets Cᵢ ⊆ Ω; joint admissibility is A = ∩ᵢ Cᵢ.
+A2 — Relational identity. Identity is defined with an equivalence relation ~, not automatically a unique microscopic state.
+A3 — Temporal dynamics. An explicit evolution rule Φₜ acts on Ω; enduring objects correspond to suitably invariant identities or classes.
+A4 — Operational locality. Locality is defined only after specifying an environment partition and a measurable interaction or propagation criterion.
+A5 — Coherence/stability. The model must state how perturbations are defined and what stability means; these are separate from bare logical compatibility.
+H1 — Ontological inversion (hypothesis). Fundamental physical objects are entirely constituted by self-consistent restrictions, rather than restrictions being only a descriptive representation of independently existing objects.
+H2 — Self-localizing recurrence (hypothesis). Some elementary physical objects are localized, robust, recurring field configurations whose internal coupling closes effective propagation paths.
+H3 — Constraint-first interactions (hypothesis). At least some observed interactions arise from changes in admissible configuration spaces, not primitive externally imposed forces.
+Axioms A0–A5 are a modeling architecture. Hypotheses H1–H3 make stronger claims that require proof or experiment.
+13. A first proposition, and why it is not enough
+Proposition 13.1. If A is forward invariant under Φₜ and any states x,y ∈ A are equivalent under ~, then evolution preserves the chosen object identity for all t ≥ 0.
+Proof. Start with x ∈ A. Invariance gives Φₜ(x) ∈ A. By assumption all members of A are equivalent, hence Φₜ(x) ~ x. Therefore the identity class is preserved. QED (“which was to be demonstrated”).
+This is logically sound but weak: the demanding assumption is the invariant class A itself. The proof does not explain why nature should admit such sets, why they localize, or how interactions follow. A real breakthrough would derive existence and stability of particular A from simple restrictions.
+14. Failure modes, attempted refutations, and safeguards
+Triviality: every object can be described by enough constraints. Describing is not generating; require independent predictive compression.
+Circularity: defining objects as persistent constrained states, then “proving” all objects persist, offers no new insight.
+Inconsistency: compatible-looking requirements may have empty common intersection.
+Over-selection: infinitely precise restrictions may select a point that cannot withstand perturbation.
+Equivalence ambiguity: without a justified ~, identity is arbitrary.
+Standing-wave mistake: stationarity of a pattern does not imply spatial localization or isolation.
+Oscillation overreach: nonoscillating fixed points, monotone relaxation, and aperiodic attractors exist in conventional models.
+Physics mismatch: gauge constraints, conservation laws, and geometric restrictions have different logical roles; they cannot all be treated as identical “negative forces.”
+Observational invisibility: zero measured coupling on selected channels is not universal decoupling.
+15. Where formalization currently stops
+
+
+16. Concrete research program: progressively harder tests
+Stage I — Discrete toy universe. Start with a finite Ω, several independently defined Cᵢ, an update map Φ, and a measurable identity relation ~. Enumerate allowed subsets; count empty, multi-state, invariant, and stable classes. Try to find combinations where coherence is rare rather than guaranteed.
+Stage II — Graph propagation model. Represent possible interactions by a network of nodes and connections. The graph must be chosen and all weights defined. Compare closed loops, reflective endpoints, removed links, and interference. Measure escape and return rather than assuming them.
+Stage III — Continuum wave model. Choose a concrete wave equation and boundary conditions, then calculate whether it admits finite-energy spatially localized solutions and whether perturbations destroy them.
+Stage IV — Negative-interaction derivation. Reproduce a standard constrained-mechanics phenomenon from explicit restrictions, then identify what empirical prediction differs from conventional formulations, if any.
+Stage V — Physics-level challenge. Derive at least one numerical observable from genuinely simpler premises, preferably one not used to fit the model. Only then consider claims about elementary forces or particles.
+17. Worked miniature example: identity without oscillation
+Let Ω = {a, b, c}, where these letters label three states. Define C₁ = {a,b} and C₂ = {b,c}. Their intersection is A = {b}. Define evolution Φₜ(b) = b for every t ≥ 0. Then b is uniquely selected, invariant, and nonoscillating. This demonstrates that our general restriction-first architecture does not imply the oscillation conjecture.
+Now change the evolution so that state b immediately maps to a, outside A. The same restrictions still uniquely specify b, but A is not invariant. This demonstrates why static convergence alone cannot establish physical persistence.
+18. Glossary of symbols and reading conventions
+
+
+19. Interim conclusion and open thesis
+The current framework supports a sharp statement: an admissible set is produced by simultaneous restrictions; an identity requires a criterion of equivalence; a persistent object additionally requires an invariant dynamics; a robust one requires stability; a local one additionally requires an interaction-relative notion of separation. These layers must not be collapsed.
+The unproved central thesis is stronger: the universe contains no primitive “objects added to a medium”; rather, all distinguishable entities and perhaps interactions arise from dynamically self-consistent restrictions. That remains possible as a research direction, but at present both its physical content and its unique predictions are unspecified.
+Next decisive move: specify one nontrivial generative rule for restrictions that produces an enduring, localized configuration without presupposing the desired object. If we cannot do that, the hypothesis remains a philosophical reinterpretation rather than a derived theory.
